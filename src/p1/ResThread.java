@@ -1,4 +1,4 @@
-package p7;
+package p1;
 
 public class ResThread implements Runnable{
 
@@ -10,14 +10,6 @@ public class ResThread implements Runnable{
 
     @Override
     public void run() {
-        synchronized (res){
-        res.variableRes = 1;
-        for (int i = 1; i < 5; i++) {
-            System.out.println(Thread.currentThread().getName() + " " + res.variableRes);
-            res.variableRes++;
-            try {
-                Thread.sleep(100);
-            }catch (InterruptedException exception){}
-        }}
+       res.inc();
     }
 }

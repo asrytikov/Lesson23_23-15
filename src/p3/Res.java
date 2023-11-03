@@ -1,2 +1,7 @@
-package p3;public class Res {
+package p3;
+
+public class Res {
+
+    int varRes = 0;
+
 }
